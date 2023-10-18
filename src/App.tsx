@@ -1,13 +1,13 @@
 import React from 'react';
 import MainPage from "./components/mainPage/mainPage";
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import {Link, Route, Routes} from 'react-router-dom';
 import QuizPage from "./components/quizPage/quizPage";
 import LastWindow from "./components/lastWindow/lastWindow";
 
 const PATHS = ['/react', '/vue', '/next', '/angular']
 function App() {
     return (
-        <BrowserRouter>
+        <div className="App" style={{display: 'flex', flexDirection: 'column'}}>
             <Link to={'/'}>
                 <div>Домой</div>
             </Link>
@@ -22,7 +22,7 @@ function App() {
             <Routes>
                 <Route path={'/last'} element={<LastWindow/>}/>
             </Routes>
-        </BrowserRouter>
+        </div>
   );
 }
 

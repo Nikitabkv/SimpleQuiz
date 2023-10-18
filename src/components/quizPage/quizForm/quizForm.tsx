@@ -2,7 +2,8 @@ import styles from './quizForm.module.css'
 import QuizFormInput from "./quizFromInput/quizFromInput";
 import {FC, useState} from "react";
 import {QuizFormInterface} from "./quizFormInterface";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 export const QuizForm:FC<QuizFormInterface> = ({questions}) => {
     const navigate = useNavigate();
     const [questionNumber, setQuestionNumber] = useState(0)
