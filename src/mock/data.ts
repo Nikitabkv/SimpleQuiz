@@ -138,7 +138,7 @@ export const data = [
     ]
     },
     {
-        title: 'Вопросы по Vue.js',
+        title: 'Вопросы по Vue',
         questions: [
             {
                 question: 'Что такое Vue.js при рендеринге списка и для чего он нужен?',
@@ -414,7 +414,7 @@ export const data = [
         ]
     },
     {
-        title: 'Вопросы по Next',
+        title: 'Вопросы по Next.js',
         questions: [
             {
                 question: 'Что такое Next при рендеринге списка и для чего он нужен?',
